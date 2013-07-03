@@ -12,7 +12,7 @@
     });
 
     var permissionObj = {
-        basePath: '<?php echo Configure::read('Site.url'); ?>',
+        basePath: window.location.hostname,
         permission: function(type, refer_id) {
             switch (type) {
                 case 'view':
