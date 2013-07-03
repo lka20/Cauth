@@ -1,6 +1,6 @@
 <script type="text/javascript">
     $(document).ready(function() {
-        $(".checkbox").attr("disabled", true);
+        $(".checkbox").attr("disabled", false);
         permissionObj.permission('view');
         $(".checkbox").on('click', function() {
             if ($(this).is(":checked")) {
