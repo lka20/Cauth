@@ -12,7 +12,7 @@
     });
 
     var permissionObj = {
-        basePath: window.location.hostname,
+        basePath: '<?php echo $this->Html->url('/'); ?>',
         permission: function(type, refer_id) {
             switch (type) {
                 case 'view':
